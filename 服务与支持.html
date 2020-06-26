@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Document</title>
+</head>
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+#navbar { margin-bottom: 0;}
+</style>
+
+<body>
+     
+    <col-xs-12>
+    <img src="logo2.jpg" style="width: 30%;"></col-xs-12>
+  <nav id="navbar" class="navbar navbar-inverse ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">本末科技</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" >
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="产品中心.html">产品中心</a></li>
+          <li><a href="解决方案.html">解决方案</a></li>
+          <li><a href="服务与支持.html">服务与支持</a></li>
+          <li><a href="#">商务合作</a></li>
+          <li><a href="#">关于本末</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+      <h1 style="text-align: center;">服务与支持</h1>      
+      <p style="text-align: center;">有问题就来联系我们吧！</p>
+    </div>
+    
+    <div class="col-md-6" style="height: 600px;">
+        <h2 style="text-align: center;">下载中心</h2>
+        <hr>
+        <div style="width: 80%; margin-left: auto;margin-right: auto;border-left-style:solid;border-right-style:solid;">
+         <p>文件1：</p> <a href="text.pdf.zip" download="text.pdf.zip" >"下载链接1"</a>
+          <hr>
+          <p>文件2：</p> <a href="#"style="color: red;">"下载链接2"</a>
+          <hr>
+          <p>文件3：</p> <a href="#"style="color: red;">"下载链接3"</a>
+          <hr>
+          <p>文件4：</p> <a href="#" style="color: red;">"下载链接4"</a>
+          <hr>
+        </div>
+    </div>
+    <div class="col-md-6" style="border-left-style:outset;">
+        <h2 style="text-align: center;">在线留言</h2>
+        <p >  一直以来，本末科技坚守以客户为中心，成就客户的信念，将您和您的意见或查询，珍而重之。作为您的紧密伙伴，如您有进一步的需要、查询或建议，欢迎您随时与我们联络，让我们继续求变求进，为您带来更臻完善的产品及服务。</p>
+        <hr>
+          <form action="/action_page.php">
+            <input type="text" name="姓名" placeholder="请输入你的名字">
+            
+            <input type="text" name="电话" placeholder="请输入电话." >
+
+            <input type="text" name="邮箱" placeholder="请输入邮箱">
+            
+            <input type="text" name="公司名称" placeholder="请输入公司名称">
+
+            <input type="text"  name="公司地址" placeholder="请输入公司地址">
+
+            <input type="text"  name="职位" placeholder="请输入职位">
+
+            <input type="text"  name="通信地址" placeholder="请输入通信地址">
+    
+            <label >留言：</label>
+            <label for="fname">咨询类别</label>
+            <input type="checkbox" name="类别1" value=" 产品建议">
+            <label for="vehicle1"> 产品建议</label>
+            <input type="checkbox" name="类别2" value="产品问题">
+            <label for="vehicle2"> 产品问题</label>
+            <input type="checkbox"  name="类别3" value="投诉建议">
+            <label for="vehicle3"> 投诉建议</label><br>
+            <textarea id="subject" name="留言" placeholder="请输入留言" style="height:200px"></textarea>
+        
+            <input type="submit" value="递交留言">
+          </form>
+        
+    </div>
+        
+    </div>
