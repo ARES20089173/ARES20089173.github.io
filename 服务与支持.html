@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <title>Document</title>
+    
+    <title>服务与支持</title>
 </head>
 <style>
 input[type=text], select, textarea {
@@ -34,6 +36,27 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
+
+.pagination {
+  display: inline-block;
+  text-align: center;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -60,8 +83,8 @@ input[type=submit]:hover {
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav" >
-          <li class="active"><a href="index.html">首页</a></li>
-       <li><a href="产品中心.html">产品中心</a></li>
+          <li class="active"><a href="工作version2.html">首页</a></li>
+          <li><a href="产品中心.html">产品中心</a></li>
           <li><a href="解决方案.html">解决方案</a></li>
           <li><a href="服务与支持.html">服务与支持</a></li>
           <li><a href="商务合作.html">商务合作</a></li>
@@ -76,17 +99,18 @@ input[type=submit]:hover {
       </div>
     </div>
   </nav>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container"></div>
+  <div class="jumbotron jumbotron-fluid" style="background-color: rgb(255,211,0);">
+    <div class="container"  style="color: rgb(35,24,21);"></div>
       <h1 style="text-align: center;">服务与支持</h1>      
       <p style="text-align: center;">有问题就来联系我们吧！</p>
     </div>
     
     <div class="col-md-6" style="height: 600px;">
+      <hr>
         <h2 style="text-align: center;">下载中心</h2>
         <hr>
-        <div style="width: 80%; margin-left: auto;margin-right: auto;border-left-style:solid;border-right-style:solid;">
-         <p>文件1：</p> <a href="text.pdf.zip" download="text.pdf.zip" >"下载链接1"</a>
+        <div style="width: 80%; margin-left: auto;margin-right: auto;border-style:groove ">
+         <p>文件1：</p> <a href="text.pdf.zip" download="text.pdf.zip" >"下载链接1"(测试用）</a>
           <hr>
           <p>文件2：</p> <a href="#"style="color: red;">"下载链接2"</a>
           <hr>
@@ -94,12 +118,35 @@ input[type=submit]:hover {
           <hr>
           <p>文件4：</p> <a href="#" style="color: red;">"下载链接4"</a>
           <hr>
+          <p>文件5：</p> <a href="#" style="color: red;">"下载链接5"</a>
+          <hr>
+          <p>文件6：</p> <a href="#" style="color: red;">"下载链接6"</a>
+          <hr>
+          <p>文件7：</p> <a href="#" style="color: red;">"下载链接7"</a>
+          <hr>
+          <p>文件8：</p> <a href="#" style="color: red;">"下载链接8"</a>
+          <hr>
+          <div class="col-xs-12" style="text-align: center;">
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+             </div>
         </div>
+         
     </div>
     <div class="col-md-6" style="border-left-style:outset;">
+      <hr>
         <h2 style="text-align: center;">在线留言</h2>
-        <p >  一直以来，本末科技坚守以客户为中心，成就客户的信念，将您和您的意见或查询，珍而重之。作为您的紧密伙伴，如您有进一步的需要、查询或建议，欢迎您随时与我们联络，让我们继续求变求进，为您带来更臻完善的产品及服务。</p>
         <hr>
+        <p >  一直以来，本末科技坚守以客户为中心，成就客户的信念，将您和您的意见或查询，珍而重之。作为您的紧密伙伴，如您有进一步的需要、查询或建议，欢迎您随时与我们联络，让我们继续求变求进，为您带来更臻完善的产品及服务。</p>
+        
           <form action="/action_page.php">
             <input type="text" name="姓名" placeholder="请输入你的名字">
             
@@ -124,10 +171,20 @@ input[type=submit]:hover {
             <input type="checkbox"  name="类别3" value="投诉建议">
             <label for="vehicle3"> 投诉建议</label><br>
             <textarea id="subject" name="留言" placeholder="请输入留言" style="height:200px"></textarea>
-        
-            <input type="submit" value="递交留言">
+            
+            <input type="submit" value="递交留言" style="width: 100%;">
           </form>
         
     </div>
-        
+    <div class="col-xs-12"style=" 
+    background-color:rgb(255,211,0);
+    width: 100%;
+    color:rgb(35,24,21);
+    text-align: center;">
+     <p>Direct Drive joint机器人关节制作机构</p>			
+     <p>版权所有 2006 - 2014 Direct Drive joint机器人关节制作科技有限公司</p>
+     <p>地址：香港 邮编：5201314</p>
+     <p>电话：94208271 传真：666-1234 邮箱: AiNi@gmail.com</p>		
+
+    </div>
     </div>
